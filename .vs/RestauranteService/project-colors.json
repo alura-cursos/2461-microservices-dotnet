@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "656414c7-72a7-4cbe-9e79-a89c2bd43b6f": {
+      "ProjectGuid": "656414c7-72a7-4cbe-9e79-a89c2bd43b6f",
+      "DisplayName": "CorretoraService",
+      "ColorIndex": 0
+    },
+    "a099a8f2-0c69-47ec-835e-c0f2c1990877": {
+      "ProjectGuid": "a099a8f2-0c69-47ec-835e-c0f2c1990877",
+      "DisplayName": "RestauranteService",
+      "ColorIndex": 1
+    },
+    "1f7c0d9e-8348-4625-a6af-9c5a15c3c180": {
+      "ProjectGuid": "1f7c0d9e-8348-4625-a6af-9c5a15c3c180",
+      "DisplayName": "ItemService",
+      "ColorIndex": 2
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Arquivos Diversos",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 3
+}
