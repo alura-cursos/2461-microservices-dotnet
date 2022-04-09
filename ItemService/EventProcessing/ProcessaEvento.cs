@@ -9,30 +9,28 @@ namespace ItemService.EventProcessing
     public class ProcessaEvento : IProcessaEvento
     {
         private readonly IMapper _mapper;
-        private readonly IItemRepository _itemRepository;
+        private readonly IServiceScopeFactory _scopeFactory;
 
-        public ProcessaEvento(IMapper mapper, IItemRepository itemRepository)
+        public ProcessaEvento(IMapper mapper, IServiceScopeFactory scopeFactory)
         {
             _mapper = mapper;
-            _itemRepository = itemRepository;
+            _scopeFactory = scopeFactory;
         }
 
         public void Processa(string mensagemParaConsumir)
         {
-            AdicionaRestaurante(mensagemParaConsumir);
-        }
+            using var scope = _scopeFactory.CreateScope();
 
-        private void AdicionaRestaurante(string mensagemParaConsumir)
-        {
-
+            var itemRepository = scope.ServiceProvider.GetRequiredService<IItemRepository>();
 
             var restaurantePublishedDto = JsonSerializer.Deserialize<RestaurantePublishedDto>(mensagemParaConsumir);
 
             var restaurante = _mapper.Map<Restaurante>(restaurantePublishedDto);
-            if (!_itemRepository.ExisteRestauranteExterno(restaurante.IdExterno))
+
+            if (!itemRepository.ExisteRestauranteExterno(restaurante.IdExterno))
             {
-                _itemRepository.CreateRestaurante(restaurante);
-                _itemRepository.SaveChanges();
+                itemRepository.CreateRestaurante(restaurante);
+                itemRepository.SaveChanges();
             }
         }
     }

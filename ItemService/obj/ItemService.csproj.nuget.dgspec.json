@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Daniel\\source\\repos\\CorretoraService\\ItemService\\ItemService.csproj": {}
+    "C:\\Users\\daniel.mastub\\aluramicro\\ItemService\\ItemService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Daniel\\source\\repos\\CorretoraService\\ItemService\\ItemService.csproj": {
+    "C:\\Users\\daniel.mastub\\aluramicro\\ItemService\\ItemService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Daniel\\source\\repos\\CorretoraService\\ItemService\\ItemService.csproj",
+        "projectUniqueName": "C:\\Users\\daniel.mastub\\aluramicro\\ItemService\\ItemService.csproj",
         "projectName": "ItemService",
-        "projectPath": "C:\\Users\\Daniel\\source\\repos\\CorretoraService\\ItemService\\ItemService.csproj",
-        "packagesPath": "C:\\Users\\Daniel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Daniel\\source\\repos\\CorretoraService\\ItemService\\obj\\",
+        "projectPath": "C:\\Users\\daniel.mastub\\aluramicro\\ItemService\\ItemService.csproj",
+        "packagesPath": "C:\\Users\\daniel.mastub\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\daniel.mastub\\aluramicro\\ItemService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Daniel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\daniel.mastub\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -46,17 +46,17 @@
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.0.2, )"
+              "version": "[6.0.3, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.2, )"
+              "version": "[6.0.3, )"
             },
             "Microsoft.EntityFrameworkCore.InMemory": {
               "target": "Package",
-              "version": "[6.0.2, )"
+              "version": "[6.0.3, )"
             },
             "RabbitMQ.Client": {
               "target": "Package",
@@ -85,7 +85,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
