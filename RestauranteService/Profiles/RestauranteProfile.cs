@@ -10,7 +10,6 @@ namespace RestauranteService.Profiles
         {
             CreateMap<Restaurante, RestauranteReadDto>();
             CreateMap<RestauranteCreateDto, Restaurante>();
-            CreateMap<RestauranteReadDto, RestaurantePublishedDto>();
         }
     }
 }

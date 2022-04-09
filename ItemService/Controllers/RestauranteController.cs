@@ -25,10 +25,4 @@ public class RestauranteController : ControllerBase
 
         return Ok(_mapper.Map<IEnumerable<RestauranteReadDto>>(restaurantes));
     }
-
-    [HttpPost]
-    public IActionResult TestInboundConnection()
-    {
-        return Ok("Conexão ok!");
-    }
 }
