@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using RestauranteService.Data;
+using RestauranteService.ItemServiceHttpClient;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,6 +17,8 @@ var connectionString = builder.Configuration.GetConnectionString("RestauranteCon
 builder.Services.AddDbContext<AppDbContext>(opt => opt.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
 
 builder.Services.AddScoped<IRestauranteRepository, RestauranteRepository>();
+
+builder.Services.AddHttpClient<IItemServiceHttpClient, ItemServiceHttpClient>();
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 

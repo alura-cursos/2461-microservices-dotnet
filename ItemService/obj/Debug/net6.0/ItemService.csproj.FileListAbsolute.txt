@@ -109,3 +109,6 @@ C:\Users\daniel.mastub\aluramicro\ItemService\obj\Debug\net6.0\scopedcss\bundle\
 C:\Users\daniel.mastub\aluramicro\ItemService\obj\Debug\net6.0\ItemService.csproj.CopyComplete
 C:\Users\daniel.mastub\aluramicro\ItemService\obj\Debug\net6.0\refint\ItemService.dll
 C:\Users\daniel.mastub\aluramicro\ItemService\obj\Debug\net6.0\ItemService.genruntimeconfig.cache
+C:\Users\daniel.mastub\aluramicro\ItemService\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\daniel.mastub\aluramicro\ItemService\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\daniel.mastub\aluramicro\ItemService\bin\Debug\net6.0\Newtonsoft.Json.dll
