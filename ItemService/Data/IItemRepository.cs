@@ -11,7 +11,6 @@ public interface IItemRepository
     void CreateRestaurante(Restaurante restaurante);
     bool RestauranteExiste(int restauranteId);
     bool ExisteRestauranteExterno(int restauranteIdExterno);
-
     IEnumerable<Item> GetItensDeRestaurante(int restauranteId);
     Item GetItem(int restauranteId, int itemId);
     void CreateItem(int restauranteId, Item item);
